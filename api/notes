@@ -1,0 +1,12 @@
+# create migration
+yarn typeorm migration:create -n CreateUsers
+
+# run migration 
+yarn typeorm migration:run
+yarn typeorm migration:revert
+
+# Server 
+- responsável por chamar o controller 
+
+# controller - controlador 
+- um controlador pra cada funcionalidade da aplicação ???????????????????????

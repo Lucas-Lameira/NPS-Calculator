@@ -1,15 +1,13 @@
+import 'reflect-metadata';
+import './database';
 const express = require('express');
-import {Request, Response} from 'express';
+import { router } from './routes';
+
 const app = express();
 const PORT = 3333 || process.env.PORT;
 
-app.get('/', (request: Request, response:Response) => {
-  return response.send('hello')
-})
+app.use(express.json());
+app.use(router)
 
-app.post('/user', (request: Request, response:Response) => {
-  return response.json({name: "Lucas lameira"});
-})
-
-app.listen(PORT, () => {console.log(`App running at ${PORT}`)});
+app.listen(PORT, () => {console.log(`App running at PORT ${PORT}`)});
 
