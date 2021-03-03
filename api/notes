@@ -5,8 +5,27 @@ yarn typeorm migration:create -n CreateUsers
 yarn typeorm migration:run
 yarn typeorm migration:revert
 
-# Server 
+# routes 
 - responsável por chamar o controller 
 
 # controller - controlador 
 - um controlador pra cada funcionalidade da aplicação ???????????????????????
+
+# model
+Manipulação de dados - aqui ele cria a entidade???
+
+# Tipos de test
+  - testes unitários
+  - testes de integração
+  - testes de ponta a ponta (E2E)
+
+
+# jest 
+yarn add jest -D
+yarn add @types/jest -D
+yarn add ts-jest -D
+
+yarn jest --init
+
+# supertest - teste de integração
+yarn add supertest @types/supertest -D
